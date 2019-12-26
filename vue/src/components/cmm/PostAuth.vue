@@ -39,7 +39,7 @@ export default{
       store.state.hak='',
       store.state.ban='',
       store.state.score=''
-      store.state.authCheck= true
+      store.state.authCheck= false
        this.$router.push({path:'/home'})
        alert(`${store.state.loginedUid},${store.state.loginedPwd},${store.state.name},${store.state.birthday}`)
     },
@@ -59,6 +59,7 @@ export default{
      axios.delete(`${this.context}/withdrawal/${this.userid}`)
      .then(()=>{
        alert('탈퇴성공')
+        store.state.authCheck= false
        this.$router.push({path:'/home'})
       }).catch(()=>{
         alert('AXIOS 실패')

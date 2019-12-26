@@ -29,7 +29,7 @@ export default{
 /* 전체 구조 */
 #wrapper {
      padding: 5px;
-     width: 960px;
+     width: 80%;
      margin: 20px auto;
 }
 header {
@@ -39,16 +39,17 @@ header {
      border-radius:0.5em;
 }
 #content {
-     width: 696px;
+     width: 80%;
      float: left;
      padding: 5px 15px;
-    min-height: 300px;
+    min-height: 650px;
     border-radius:0.5em;
 }
 #sidebar {
-     width: 200px;
+     width: 20%;
      padding: 5px 15px;
      float: left;
+     min-height: 650px;
      border-radius:0.5em;
 }
 footer {
